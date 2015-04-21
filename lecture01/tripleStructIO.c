@@ -80,12 +80,7 @@ main () {
         pthread_create ( thread + t, NULL, &hello, &threadArg[t] );
     }
 
-    /**
-     * @attention Joining threads is _important!_ If you don't do it you could have
-     * the program terminated before threads forked by main are executed. Sometimes,
-     * in this case, you get printed `Hello World from thread!` twice or not printed
-     * at all.
-     */
+    /* Join threads and print results */
     for ( size_t t = 0; t < numThreads; ++ t ) {
         pthread_join ( thread[t], NULL );
 
