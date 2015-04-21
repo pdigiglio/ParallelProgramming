@@ -1,2 +1,14 @@
 # documentation folder
-latex/*
+#latex/*
+
+# Ignore all files
+*
+
+# only keep track of these files
+!.gitignore
+!Doxygen
+!*.c
+!*h
+
+# also search in subdirs
+!*/
