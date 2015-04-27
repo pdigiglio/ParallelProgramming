@@ -6,7 +6,7 @@
 
 # only keep track of these files
 !.gitignore
-!Doxygen
+!Doxyfile
 !*.c
 !*h
 
